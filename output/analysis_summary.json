@@ -1,0 +1,282 @@
+{
+  "rows_analyzed": 119209,
+  "cleaning": {
+    "rows_before": 119390,
+    "rows_after": 119209,
+    "negative_adr_rows_removed": 1,
+    "zero_guest_rows_removed": 180,
+    "country_cn_rows_merged_to_chn": 1279,
+    "undefined_meal_values_merged_to_sc": 1169,
+    "adr_cap_quantile": 0.995,
+    "adr_cap_value": 275.0,
+    "adr_values_capped": 588,
+    "missing_values_after_cleaning": {
+      "children": 4,
+      "country": 478,
+      "agent": 16280,
+      "company": 112441
+    }
+  },
+  "cancellation_rate": 0.37076898556317056,
+  "countries_in_top_six": [
+    "PRT",
+    "AGO",
+    "NOR",
+    "ITA",
+    "MAR",
+    "BRA"
+  ],
+  "country_month_min_bookings": 50,
+  "lead_time_single_feature_auc_strength": 0.6891140874874911,
+  "selected_model_features": [
+    "hotel",
+    "lead_time",
+    "arrival_date_month",
+    "meal",
+    "country",
+    "market_segment",
+    "distribution_channel",
+    "previous_cancellations",
+    "reserved_room_type",
+    "deposit_type",
+    "customer_type",
+    "adr",
+    "total_of_special_requests"
+  ],
+  "highest_risk_groups": [
+    {
+      "attribute": "deposit_type",
+      "value_group": "Non Refund",
+      "bookings": 14587,
+      "cancellation_rate": 0.9936244601357374,
+      "risk_difference": 0.6228554745725667,
+      "model_eligible": true
+    },
+    {
+      "attribute": "market_segment",
+      "value_group": "Groups",
+      "bookings": 19790,
+      "cancellation_rate": 0.6111167256189995,
+      "risk_difference": 0.24034774005582898,
+      "model_eligible": true
+    },
+    {
+      "attribute": "meal",
+      "value_group": "FB",
+      "bookings": 798,
+      "cancellation_rate": 0.5989974937343359,
+      "risk_difference": 0.2282285081711653,
+      "model_eligible": true
+    },
+    {
+      "attribute": "lead_time",
+      "value_group": "(184.0, 737.0]",
+      "bookings": 23735,
+      "cancellation_rate": 0.572656414577628,
+      "risk_difference": 0.2018874290144574,
+      "model_eligible": true
+    },
+    {
+      "attribute": "country",
+      "value_group": "PRT",
+      "bookings": 48483,
+      "cancellation_rate": 0.5673328795660335,
+      "risk_difference": 0.19656389400286295,
+      "model_eligible": true
+    },
+    {
+      "attribute": "lead_time",
+      "value_group": "(99.0, 184.0]",
+      "bookings": 23941,
+      "cancellation_rate": 0.4501065118416106,
+      "risk_difference": 0.07933752627844004,
+      "model_eligible": true
+    },
+    {
+      "attribute": "assigned_room_type",
+      "value_group": "A",
+      "bookings": 74020,
+      "cancellation_rate": 0.4450553904350176,
+      "risk_difference": 0.07428640487184701,
+      "model_eligible": false
+    },
+    {
+      "attribute": "stays_in_week_nights",
+      "value_group": "(1.0, 2.0]",
+      "bookings": 33670,
+      "cancellation_rate": 0.4417285417285417,
+      "risk_difference": 0.07095955616537114,
+      "model_eligible": true
+    },
+    {
+      "attribute": "hotel",
+      "value_group": "City Hotel",
+      "bookings": 79163,
+      "cancellation_rate": 0.4178593534858457,
+      "risk_difference": 0.047090367922675125,
+      "model_eligible": true
+    },
+    {
+      "attribute": "arrival_date_month",
+      "value_group": "June",
+      "bookings": 10929,
+      "cancellation_rate": 0.41485954799158203,
+      "risk_difference": 0.04409056242841147,
+      "model_eligible": true
+    }
+  ],
+  "strongest_associations": [
+    {
+      "attribute": "deposit_type",
+      "attribute_type": "categorical",
+      "association_measure": "cramers_v",
+      "association_strength": 0.48152940421088325,
+      "raw_auc": NaN,
+      "p_value": 0.0,
+      "model_eligible": true
+    },
+    {
+      "attribute": "lead_time",
+      "attribute_type": "numeric",
+      "association_measure": "single_feature_roc_auc",
+      "association_strength": 0.3782281749749823,
+      "raw_auc": 0.6891140874874911,
+      "p_value": NaN,
+      "model_eligible": true
+    },
+    {
+      "attribute": "country",
+      "attribute_type": "categorical",
+      "association_measure": "cramers_v",
+      "association_strength": 0.3600341468895556,
+      "raw_auc": NaN,
+      "p_value": 0.0,
+      "model_eligible": true
+    },
+    {
+      "attribute": "total_of_special_requests",
+      "attribute_type": "numeric",
+      "association_measure": "single_feature_roc_auc",
+      "association_strength": 0.27191382242724216,
+      "raw_auc": 0.3640430887863789,
+      "p_value": NaN,
+      "model_eligible": true
+    },
+    {
+      "attribute": "market_segment",
+      "attribute_type": "categorical",
+      "association_measure": "cramers_v",
+      "association_strength": 0.26702258528628026,
+      "raw_auc": NaN,
+      "p_value": 0.0,
+      "model_eligible": true
+    },
+    {
+      "attribute": "assigned_room_type",
+      "attribute_type": "categorical",
+      "association_measure": "cramers_v",
+      "association_strength": 0.20156910409167508,
+      "raw_auc": NaN,
+      "p_value": 0.0,
+      "model_eligible": false
+    },
+    {
+      "attribute": "distribution_channel",
+      "attribute_type": "categorical",
+      "association_measure": "cramers_v",
+      "association_strength": 0.17715684053505287,
+      "raw_auc": NaN,
+      "p_value": 0.0,
+      "model_eligible": true
+    },
+    {
+      "attribute": "hotel",
+      "attribute_type": "categorical",
+      "association_measure": "cramers_v",
+      "association_strength": 0.13707456442455787,
+      "raw_auc": NaN,
+      "p_value": 0.0,
+      "model_eligible": true
+    },
+    {
+      "attribute": "booking_changes",
+      "attribute_type": "numeric",
+      "association_measure": "single_feature_roc_auc",
+      "association_strength": 0.1369267702095327,
+      "raw_auc": 0.43153661489523365,
+      "p_value": NaN,
+      "model_eligible": false
+    },
+    {
+      "attribute": "customer_type",
+      "attribute_type": "categorical",
+      "association_measure": "cramers_v",
+      "association_strength": 0.1366080887437182,
+      "raw_auc": NaN,
+      "p_value": 0.0,
+      "model_eligible": true
+    }
+  ],
+  "lead_time_quintiles": [
+    {
+      "attribute": "lead_time",
+      "value_group": "(184.0, 737.0]",
+      "bookings": 23735,
+      "cancellation_rate": 0.572656414577628,
+      "risk_difference": 0.2018874290144574,
+      "model_eligible": true
+    },
+    {
+      "attribute": "lead_time",
+      "value_group": "(99.0, 184.0]",
+      "bookings": 23941,
+      "cancellation_rate": 0.4501065118416106,
+      "risk_difference": 0.07933752627844004,
+      "model_eligible": true
+    },
+    {
+      "attribute": "lead_time",
+      "value_group": "(45.0, 99.0]",
+      "bookings": 23437,
+      "cancellation_rate": 0.3947604215556599,
+      "risk_difference": 0.02399143599248932,
+      "model_eligible": true
+    },
+    {
+      "attribute": "lead_time",
+      "value_group": "(12.0, 45.0]",
+      "bookings": 23225,
+      "cancellation_rate": 0.32426264800861143,
+      "risk_difference": -0.04650633755455913,
+      "model_eligible": true
+    },
+    {
+      "attribute": "lead_time",
+      "value_group": "(-0.001, 12.0]",
+      "bookings": 24871,
+      "cancellation_rate": 0.12255237023038881,
+      "risk_difference": -0.24821661533278175,
+      "model_eligible": true
+    }
+  ],
+  "non_refundable_booking_count": 14587,
+  "non_refundable_cancellation_rate": 0.9936244601357374,
+  "non_refundable_portuguese_share": 0.9727578398408014,
+  "decision_areas": [
+    {
+      "area": "Deposit and market-segment interaction",
+      "evidence": "Non-refundable bookings cancel at 99.4%; 97.3% are Portuguese.",
+      "recommendation": "Audit deposit policy by country and market segment before treating deposit type as an independent cause."
+    },
+    {
+      "area": "Long-lead-time cancellations",
+      "evidence": "Single-feature lead-time AUC is 0.689 after orienting toward the stronger class association.",
+      "recommendation": "Evaluate targeted reconfirmation or resale preparation for long-lead bookings, using measured precision and recall to set an operational threshold."
+    },
+    {
+      "area": "Reservation-time risk triage",
+      "evidence": "The selected booking-time features are evaluated against a majority-class baseline and with repeated group-aware splits.",
+      "recommendation": "Pilot the best calibrated model as a review aid; monitor false positives and missed cancellations before changing inventory policy."
+    }
+  ]
+}

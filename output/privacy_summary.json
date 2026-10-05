@@ -1,0 +1,35 @@
+{
+  "results": [
+    {
+      "scenario": "exact date, country, party size",
+      "quasi_identifiers": "hotel, country_qi, arrival_date, party_size",
+      "records": 119209,
+      "unique_equivalence_classes": 32720,
+      "minimum_k": 1,
+      "median_k": 8.0,
+      "share_k_1": 0.14316033185413854,
+      "share_k_below_5": 0.3607529632829736
+    },
+    {
+      "scenario": "month only, country, exact party size",
+      "quasi_identifiers": "hotel, country_qi, arrival_month, party_size",
+      "records": 119209,
+      "unique_equivalence_classes": 3908,
+      "minimum_k": 1,
+      "median_k": 399.0,
+      "share_k_1": 0.01072066706372841,
+      "share_k_below_5": 0.03450242850791467
+    },
+    {
+      "scenario": "month, continent, generalized party size",
+      "quasi_identifiers": "hotel, continent, arrival_month, party_size_bucket",
+      "records": 119209,
+      "unique_equivalence_classes": 416,
+      "minimum_k": 1,
+      "median_k": 2409.0,
+      "share_k_1": 0.00029360199313810197,
+      "share_k_below_5": 0.0019293845263360988
+    }
+  ],
+  "interpretation_limit": "These are record-level uniqueness estimates for selected quasi-identifiers, not proof of individual re-identification. k-anonymity does not prevent attribute disclosure or replace access controls and lawful processing."
+}

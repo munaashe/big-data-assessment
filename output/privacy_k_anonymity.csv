@@ -1,0 +1,4 @@
+scenario,quasi_identifiers,records,unique_equivalence_classes,minimum_k,median_k,share_k_1,share_k_below_5
+"exact date, country, party size","hotel, country_qi, arrival_date, party_size",119209,32720,1,8.0,0.14316033185413854,0.3607529632829736
+"month only, country, exact party size","hotel, country_qi, arrival_month, party_size",119209,3908,1,399.0,0.01072066706372841,0.03450242850791467
+"month, continent, generalized party size","hotel, continent, arrival_month, party_size_bucket",119209,416,1,2409.0,0.00029360199313810197,0.0019293845263360988
